@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  web:
+    container_name: 4m-web
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+#    env_file: .env
+    volumes:
+      - './web:/app/web'
+    ports:
+      - '1000:1000'
+    command: [ "npm", "run", "dev", '--', '--port', '1000' ]
+
