@@ -80,6 +80,7 @@ export default HeaderBar
   list-style: none;
   float: right;
   padding-left: 2rem;
+  cursor: pointer;
 }
 .navbar-brand {
   font-family: "Great Vibes", cursive;
