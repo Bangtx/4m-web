@@ -8,9 +8,9 @@
           v-img(src="/logo.jpg" max-width="120" )
         v-col.pc(cols="6" md="9")
           ul.pt-2.hidden-sm-and-down
-            li.pa-2 Contact
-            li.pa-2 Serices
-            li.pa-2 Home
+            li.pa-2(@click="$router.push({path: 'contact'})") Contact
+            li.pa-2(@click="$router.push({path: 'about_us'})") About Us
+            li.pa-2(@click="$router.push({path: '/'})") Home
           v-icon.hidden-md-and-up.pt-2(style="float: right" @click="onShowCategory") mdi-menu
       .center.hidden-md-and-up
         v-expand-transition
@@ -19,9 +19,9 @@
             class="mx-auto"
           )
             ul
-              li.pa-2 Contact
-              li.pa-2 Serices
-              li.pa-2 Home
+              li.pa-2(@click="$router.push({path: 'contact'})") Contact
+              li.pa-2(@click="$router.push({path: 'about_us'})") About Us
+              li.pa-2(@click="$router.push({path: '/'})") Home
         //v-col(cols="2")
         //  ul.pt-2
         //    li
